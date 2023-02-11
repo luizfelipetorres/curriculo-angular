@@ -1,0 +1,11 @@
+@import '/src/app/dist/scss/variables.scss';
+
+*{
+  text-align: center;
+  color: $primary-color;
+}
+
+hr{
+  background-color: $primary-color;
+  height: 1px;
+}
