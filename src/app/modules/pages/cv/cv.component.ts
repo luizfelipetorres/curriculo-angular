@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { ICurriculum } from 'src/app/interfaces/ICurriculum';
+import { mock } from '../../../mock/curriculum'
 
 @Component({
   selector: 'app-cv',
@@ -6,5 +8,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./cv.component.scss']
 })
 export class CvComponent {
-
+  public mock: ICurriculum = mock
 }

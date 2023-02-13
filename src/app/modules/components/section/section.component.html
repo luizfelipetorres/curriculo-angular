@@ -1,0 +1,14 @@
+<section class="content">
+  <h2 (click)="showDetails = !showDetails">
+    <li>{{ item?.name| uppercase }}</li>
+    <hr/>
+  </h2>
+  <section *ngIf="showDetails">
+    <p>{{ item?.description }}</p>
+    <ul>
+      <li *ngFor="let item of item?.subItem">
+        {{ item.name }} {{ item.description ? ' - ' + item.description : ''}}
+      </li>
+    </ul>
+  </section>
+</section>

@@ -1,1 +1,8 @@
-<app-header></app-header>
+<app-header [name]="mock.name"></app-header>
+<ol>
+  <div *ngFor="let item of mock.items">
+    <app-section
+      [item]=item
+    ></app-section>
+  </div>
+</ol>

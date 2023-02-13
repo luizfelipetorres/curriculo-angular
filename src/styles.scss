@@ -1,1 +1,28 @@
-/* You can add global styles to this file, and also import other style files */
+@import '/src/app/dist/scss/variables.scss';
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&display=swap');
+
+body{
+  display: flex;
+  justify-content: center;
+  margin: auto;
+}
+
+h1,
+h2 {
+  justify-content: center;
+  font-family: 'Comfortaa', cursive;
+  color: $primary-color;
+}
+
+p{
+  text-indent: 3rem;
+}
+
+ul{
+  list-style: none;
+}
+
+ul>li::before{
+  content: "\2794";
+  color: $primary-color;
+}

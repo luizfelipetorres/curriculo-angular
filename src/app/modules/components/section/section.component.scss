@@ -1,15 +1,15 @@
 @import '/src/app/dist/scss/variables.scss';
 
-h1{
-  text-align: center;
+h2 {
+  margin: 0px;
 }
 
-p{
-  text-align: end;
-  color: $primary-color;
-}
-
-hr{
+hr {
   background-color: $primary-color;
   height: 1px;
+}
+
+.content {
+  margin-top: 30px;
+  margin-bottom: 30px;
 }

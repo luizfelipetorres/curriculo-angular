@@ -1,15 +1,17 @@
-import { Component } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.scss']
 })
-export class HeaderComponent {
-  public title:string = 'luiz felipe torres farias';
-  public date:Date = new Date();
-  public getNow(): void {
-    this.date = new Date();
-  }
+export class HeaderComponent implements OnInit {
+  @Input() public name: string = 'fulano';
+  public date: Date = new Date();
 
+  ngOnInit(): void {
+    setInterval(() => {
+      this.date = new Date();
+    }, 1000);
+  }
 }
