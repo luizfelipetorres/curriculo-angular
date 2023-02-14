@@ -4,6 +4,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { PagesModule } from './modules/pages/pages.module';
+import { CurriculoService } from './services/curriculo.service'
 
 @NgModule({
   declarations: [

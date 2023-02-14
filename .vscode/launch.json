@@ -3,7 +3,15 @@
   "version": "0.2.0",
   "configurations": [
     {
-      "name": "ng serve",
+      "name": "Launch Chrome",
+      "request": "launch",
+      "type": "chrome",
+      "url": "http://localhost:4200",
+      "webRoot": "${workspaceFolder}"
+    },
+
+    {
+      "name": "ng serve -o",
       "type": "pwa-chrome",
       "request": "launch",
       "preLaunchTask": "npm: start",

@@ -1,6 +1,6 @@
 import { ICurriculum } from './../interfaces/ICurriculum'
 export const mock: ICurriculum = {
-  name: 'luiz felipe torres farias',
+  name: 'luiz felipe torres farias (mock)',
   items: [
     {
       name: 'objetivos',
